@@ -17,6 +17,13 @@ class BobPlayer extends Player
 
     public function getChoice()
     {
+        if ( $this->result->getLastChoiceFor($this->mySide))
+            return parent::rockChoice();
+        
+        if ( $this->result->getLastScoreFor($this->mySide) >= $this->result->getLastScoreFor($this->opponentSide) )
+             return  $this->result->getLastChoiceFor($this->mySide)
+        
+        
         // -------------------------------------    -----------------------------------------------------
         // How to get my Last Choice           ?    $this->result->getLastChoiceFor($this->mySide) -- if 0 (first round)
         // How to get the opponent Last Choice ?    $this->result->getLastChoiceFor($this->opponentSide) -- if 0 (first round)
