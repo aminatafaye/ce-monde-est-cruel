@@ -7,7 +7,10 @@ use Hackathon\Game\Result;
 /**
  * Class BobPlayers
  * @package Hackathon\PlayerIA
- * @author FAYE Aminata 
+ * @author Aminata FAYE 
+ DESCRIPTION: 
+ J'ai dans un premier temps essayé de choisir ma main grâce au score du tour précendent. 
+ Ayant passer beacucoup de temps à débuger, j'ai choisi de faire de choisir de faire la même chose que ce que qu'à fait mon adversaire à la main précedente 
  */
 class BobPlayer extends Player
 {
