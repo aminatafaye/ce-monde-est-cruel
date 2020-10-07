@@ -22,6 +22,8 @@ class BobPlayer extends Player
         
         if ( $this->result->getLastScoreFor($this->mySide) >= $this->result->getLastScoreFor($this->opponentSide) )
              return  $this->result->getLastChoiceFor($this->mySide)
+        else 
+            return  $this->result->getLastChoiceFor($this->mySide)
         
         
         // -------------------------------------    -----------------------------------------------------
