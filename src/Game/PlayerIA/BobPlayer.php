@@ -20,9 +20,9 @@ class BobPlayer extends Player
        if ( $this->result->getLastChoiceFor($this->mySide))
             return parent::rockChoice();
         
-        if ( $this->result->getLastScoreFor($this->mySide) >= $this->result->getLastScoreFor($this->opponentSide) )
+       /* if ( $this->result->getLastScoreFor($this->mySide) >= $this->result->getLastScoreFor($this->opponentSide) )
              return  $this->result->getLastChoiceFor($this->mySide);
-        /* else 
+         else 
             return  ($this->result->getLastChoiceFor($this->oppenentSide)); */
         
         
